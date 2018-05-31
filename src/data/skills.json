@@ -1,0 +1,20 @@
+{
+  "languages": [
+    "JavaScript (ES6)",
+    "Python",
+    "C/C++"
+  ],
+  "frameworks": [
+    "Node",
+    "Angular",
+    "Express.js",
+    "Bootstrap"
+  ],
+  "tools": [
+    "AWS",
+    "Git",
+    "Terraform",
+    "Ansible",
+    "Docker"
+  ]
+}

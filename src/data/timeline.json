@@ -1,0 +1,23 @@
+[
+  {
+    "company": "Capital One",
+    "role": "Software Engineer",
+    "date": "July 2016 - Present",
+    "description": "I currently work here.",
+    "sprite": "work"
+  },
+  {
+    "company": "Capital One",
+    "role": "Associate Software Engineer",
+    "date": "July 2015 - July 2016",
+    "description": "I used to be associate level.",
+    "sprite": "work"
+  },
+  {
+    "company": "University of Illinois at Urbana-Champaign",
+    "role": "Bachelor's in Computer Engineering",
+    "date": "Aug 2011 - May 2015",
+    "description": "I went to school here.",
+    "sprite": "academic"
+  }
+]

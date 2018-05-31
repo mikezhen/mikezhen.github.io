@@ -1,0 +1,17 @@
+[
+  {
+    "form": "Email",
+    "url": "mailto:mike.zhen@icloud.com",
+    "sprite": "envelope"
+  },
+  {
+    "form": "LinkedIn",
+    "url": "https://www.linkedin.com/in/mikezhen",
+    "sprite": "linkedin"
+  },
+  {
+    "form": "GitHub",
+    "url": "https://github.com/mikezhen",
+    "sprite": "github"
+  }
+]
