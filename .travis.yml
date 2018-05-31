@@ -7,7 +7,7 @@ cache:
     - "node_modules"
 stages:
   - name: test
-    if: type IS pull_request
+    if: type = pull_request
   - name: build
     if: branch = develop
   - name: deploy
