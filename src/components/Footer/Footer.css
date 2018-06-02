@@ -2,3 +2,15 @@
   padding-bottom: 1em;
   margin-bottom: 0;
 }
+
+#footer .image {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+#footer .image img {
+  margin: auto;
+  width: auto;
+  height: 3.5em;
+}
