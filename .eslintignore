@@ -1,0 +1,4 @@
+src/assets/*
+src/registerServiceWorker.js
+src/index.js
+*.test.js
