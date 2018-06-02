@@ -3708,7 +3708,7 @@
 		flex-wrap: wrap;
 		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		margin: 0;
 	}
 
 		#footer > * {
@@ -3718,7 +3718,7 @@
 
 		#footer .copyright {
 			width: 100%;
-			margin: 2.5em 0 2em 0;
+			margin: 2.5em 0 0 0;
 			font-size: 0.8em;
 			text-align: center;
 		}
@@ -3726,7 +3726,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 4em 4em 2em 4em ;
+				padding: 4em 4em 1em 4em ;
 			}
 
 		}
@@ -3734,7 +3734,7 @@
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 4em 3em 2em 3em ;
+				padding: 4em 3em 1em 3em ;
 				display: block;
 				margin: 0 0 3em 0;
 				width: 100%;
