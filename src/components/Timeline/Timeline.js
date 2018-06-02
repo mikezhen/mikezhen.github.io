@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import events from 'data/timeline.json';
 import './Timeline.css';
 
 export class Timeline extends Component {
@@ -7,7 +8,7 @@ export class Timeline extends Component {
       <div className="timeline-wrapper">
         <span className="up-arrow" />
         <div className="timeline">
-          {this.props.events.map((history) => {
+          {events.map((history) => {
             return (
               <div className="timeline-block" key={history.date}>
                 <div className="timeline-content">
@@ -16,12 +17,16 @@ export class Timeline extends Component {
                   <p className="description">{history.description}</p>
                   <div className="container">
                     {history.skills.map((skill) => {
-                      return <span className="label label-skill" key={skill}>{skill}</span>
+                      return (
+                        <span className="label label-skill" key={skill}>
+                          {skill}
+                        </span>
+                      );
                     })}
                   </div>
                 </div>
                 <div className="timeline-image">
-                  <div className={`sprite ${history.sprite}`}></div>
+                  <div className={`sprite ${history.sprite}`} />
                 </div>
                 <span className="date">{history.date}</span>
               </div>

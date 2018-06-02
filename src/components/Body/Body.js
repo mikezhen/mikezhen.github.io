@@ -1,21 +1,38 @@
 import React, { Component } from 'react';
+import routes from 'data/navigation.json';
+import PropTypes from 'prop-types';
 import { Navbar } from '../Navbar';
 import { Section, SectionSkill, SectionIntro, SectionExperience } from '../Section';
-import routes from '../data/navigation.json';
+
+const propTypes = {
+  background: PropTypes.string,
+  resumeUrl: PropTypes.string,
+  imgUrl: PropTypes.string,
+};
+
+const defaultProps = {
+  background: 'Description',
+  resumeUrl: '',
+  imgUrl: '',
+};
 
 export class Body extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      routes: routes
-    };
+    this.state = { routes };
   }
 
   renderSection(section) {
     let component;
-    switch(section) {
+    switch (section) {
       case 'intro':
-        component = <SectionIntro person={this.props.person}/>;
+        component = (
+          <SectionIntro
+            background={this.props.background}
+            resumeUrl={this.props.resumeUrl}
+            imgUrl={this.props.imgUrl}
+          />
+        );
         break;
       case 'skills':
         component = <SectionSkill />;
@@ -46,3 +63,6 @@ export class Body extends Component {
     );
   }
 }
+
+Body.propTypes = propTypes;
+Body.defaultProps = defaultProps;
