@@ -212,11 +212,11 @@
 }
 
 .timeline-wrapper .timeline .timeline-block .timeline-image .academic {
-  background-image: url('../assets/img/graduate-cap.png');
+  background-image: url('../../assets/img/graduate-cap.png');
 }
 
 .timeline-wrapper .timeline .timeline-block .timeline-image .work {
-  background-image: url('../assets/img/briefcase.png');
+  background-image: url('../../assets/img/briefcase.png');
 }
 
 @media only screen and (max-width: 1170px) {
