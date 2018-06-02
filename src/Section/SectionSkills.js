@@ -3,18 +3,27 @@ import skills from '../data/skills.json';
 
 export class SectionSkill extends Component {
   render() {
+    const icons = [
+      { style: "style2", img: "fa-code" },
+      { style: "style3", img: "fa-sitemap" },
+      { style: "style4", img: "fa-terminal" }
+    ];
     const categories = [];
     for (let category in skills) {
+      let index = categories.length;
+      let list = skills[category];
+      let icon = icons[index];
       categories.push(
         <div className="4u 12u$(medium)" key={category}>
-          <h3>{category.replace(/^\w/, c => c.toUpperCase())}</h3>
-          <ul>
-            {skills[category].map((skill) =>
+          <span id="skill-icons" className={`icon major ${icon.style} ${icon.img}`} />
+          <h3 style={{fontWeight: 'bold'}}>{category.replace(/^\w/, c => c.toUpperCase())}</h3>
+          <ul className="skill-list">
+            {list.map((skill) =>
               <li key={skill}>{skill}</li>
             )}
           </ul>
         </div>
-      )
+      );
     }
     return (
       <div className="row">

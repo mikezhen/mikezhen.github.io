@@ -1,14 +1,47 @@
 import React, { Component } from 'react';
-import person from '../data/intro';
 
 export class SectionIntro extends Component {
+  constructor() {
+    super();
+    this.state = {
+      hoverState: false
+    };
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
+    this.handleMouseLeave = this.handleMouseLeave.bind(this);
+  }
+
+  handleMouseEnter() {
+    this.setState({
+      hoverState: true
+    });
+  }
+
+  handleMouseLeave() {
+    this.setState({
+      hoverState: false
+    });
+  }
+
   render() {
     return (
-      <div className="row">
-        <div className="spotlight">
-          <p>{person.background}</p>
-          <span className="image"><img src="https://media.licdn.com/dms/image/C5603AQH4k6Sw4lLMyQ/profile-displayphoto-shrink_200_200/0?e=1533168000&v=beta&t=7L6jB_FyKRFLuCV8WCtquyFp8_AMTCEDrsr6kl0gpHk" alt="" /></span>
+      <div className="spotlight">
+        <div className="content">
+          <header className="major">
+            <h2>{this.props.title}</h2>
+          </header>
+          <p>{this.props.person.background}</p>
+          <a download href={this.props.person.resumeUrl} className="button special"
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}>
+            {this.state.hoverState ?
+              <span className="icon fa-download" /> :
+              'Get Resume'
+            }
+          </a>
         </div>
+        <span className="image">
+          <img src={this.props.person.imgUrl} alt="" />
+        </span>
       </div>
     );
   }

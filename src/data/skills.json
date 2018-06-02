@@ -7,14 +7,11 @@
   "frameworks": [
     "Node",
     "Angular",
-    "Express.js",
-    "Bootstrap"
+    "Express.js"
   ],
   "tools": [
     "AWS",
-    "Git",
     "Terraform",
-    "Ansible",
-    "Docker"
+    "Ansible"
   ]
 }

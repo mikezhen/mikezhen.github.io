@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Navbar } from '../Navbar';
 import { Section, SectionSkill, SectionIntro, SectionExperience } from '../Section';
 import routes from '../data/navigation.json';
-import { Timeline } from '../Timeline';
 
 export class Body extends Component {
   constructor(props) {
@@ -10,6 +9,24 @@ export class Body extends Component {
     this.state = {
       routes: routes
     };
+  }
+
+  renderSection(section) {
+    let component;
+    switch(section) {
+      case 'intro':
+        component = <SectionIntro person={this.props.person}/>;
+        break;
+      case 'skills':
+        component = <SectionSkill />;
+        break;
+      case 'experience':
+        component = <SectionExperience />;
+        break;
+      default:
+        break;
+    }
+    return component;
   }
 
   render() {
@@ -20,9 +37,7 @@ export class Body extends Component {
           {this.state.routes.map((route) => {
             return (
               <Section section={route.section} title={route.title} key={route.id}>
-                {route.section === 'skills' && <SectionSkill />}
-                {route.section === 'intro' && <SectionIntro />}
-                {route.section === 'experience' && <SectionExperience />}
+                {this.renderSection(route.section)}
               </Section>
             );
           })}
