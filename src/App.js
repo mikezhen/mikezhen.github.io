@@ -19,7 +19,7 @@ class App extends Component {
           resumeUrl={person.resumeUrl}
           imgUrl={person.imgUrl}
         />
-        <Footer name={person.name} />
+        <Footer />
       </div>
     );
   }

@@ -4,14 +4,6 @@ import ScrollUp from 'react-scroll-up';
 import rocket from 'assets/img/rocket.png';
 import './Footer.css';
 
-const propTypes = {
-  name: PropTypes.string,
-};
-
-const defaultProps = {
-  name: 'Name',
-};
-
 export class Footer extends Component {
   render() {
     return (
@@ -19,11 +11,8 @@ export class Footer extends Component {
         <ScrollUp showUnder={2200}>
           <img id="scroll-image" src={rocket} alt="" />
         </ScrollUp>
-        <p className="copyright">&copy;2018. {this.props.name}</p>
+        <p className="copyright">Beam me up!</p>
       </footer>
     );
   }
 }
-
-Footer.propTypes = propTypes;
-Footer.defaultProps = defaultProps;
