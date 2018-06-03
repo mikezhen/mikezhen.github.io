@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import logo from 'logo.svg';
 import { HeaderContact } from './HeaderContact';
+import './Header.css';
 
 const propTypes = {
   name: PropTypes.string,
@@ -21,7 +22,11 @@ export class Header extends Component {
       <header id="header" className="alt">
         <span className="logo"><img src={logo} alt="" /></span>
         <h1>{this.props.name}</h1>
-        <p>{this.props.role} @{this.props.location}</p>
+        <p>{this.props.role} </p>
+        <div className="location row">
+          <i className="icon fa-map-marker" />
+          <p>{this.props.location}</p>
+        </div>
         <HeaderContact />
       </header>
     );

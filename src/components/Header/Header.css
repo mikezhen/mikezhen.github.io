@@ -1,0 +1,24 @@
+#header p {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#header .location {
+  display: inline-block;
+  margin-bottom: 2em;
+  box-sizing: border-box;
+}
+
+#header .location .icon {
+  font-size: 1.3em;
+  margin-right: .5em;
+  padding-left: 1em;
+  color: #de7986;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 735px) {
+  #header .location .icon {
+    font-size: 1em;
+  }
+}
