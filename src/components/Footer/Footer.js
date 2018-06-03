@@ -16,7 +16,7 @@ export class Footer extends Component {
   render() {
     return (
       <footer id="footer">
-        <ScrollUp showUnder={2400}>
+        <ScrollUp showUnder={2200}>
           <img id="scroll-image" src={rocket} alt="" />
         </ScrollUp>
         <p className="copyright">&copy;2018. {this.props.name}</p>
