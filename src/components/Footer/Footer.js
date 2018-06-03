@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ScrollUp from 'react-scroll-up';
 import rocket from 'assets/img/rocket.png';
 import './Footer.css';
 
@@ -15,9 +16,9 @@ export class Footer extends Component {
   render() {
     return (
       <footer id="footer">
-        <div className="image">
-          <img src={rocket} alt="" />
-        </div>
+        <ScrollUp showUnder={2300}>
+          <img id="scroll-image" src={rocket} alt="" />
+        </ScrollUp>
         <p className="copyright">&copy;2018. {this.props.name}</p>
       </footer>
     );
