@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import ScrollUp from 'react-scroll-up';
 import rocket from 'assets/img/rocket.png';
 import './Footer.css';
