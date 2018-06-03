@@ -16,7 +16,6 @@ class App extends Component {
         />
         <Body
           background={person.background}
-          resumeUrl={person.resumeUrl}
           imgUrl={person.imgUrl}
         />
         <Footer />

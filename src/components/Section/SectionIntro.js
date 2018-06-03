@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import resume from 'assets/mikezhen.pdf';
 
 const propTypes = {
   title: PropTypes.string,
   background: PropTypes.string,
-  resumeUrl: PropTypes.string,
   imgUrl: PropTypes.string,
 };
 
 const defaultProps = {
   title: 'Title',
   background: 'Description',
-  resumeUrl: '',
   imgUrl: '',
 };
 
@@ -47,7 +46,7 @@ export class SectionIntro extends Component {
           <p>{this.props.background}</p>
           <a
             download
-            href={this.props.resumeUrl}
+            href={resume}
             className="button special"
             onMouseEnter={this.handleMouseEnter}
             onMouseLeave={this.handleMouseLeave}

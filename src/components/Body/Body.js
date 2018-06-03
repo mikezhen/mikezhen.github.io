@@ -6,13 +6,11 @@ import { Section, SectionSkill, SectionIntro, SectionExperience } from '../Secti
 
 const propTypes = {
   background: PropTypes.string,
-  resumeUrl: PropTypes.string,
   imgUrl: PropTypes.string,
 };
 
 const defaultProps = {
   background: 'Description',
-  resumeUrl: '',
   imgUrl: '',
 };
 
@@ -29,7 +27,6 @@ export class Body extends Component {
         component = (
           <SectionIntro
             background={this.props.background}
-            resumeUrl={this.props.resumeUrl}
             imgUrl={this.props.imgUrl}
           />
         );
