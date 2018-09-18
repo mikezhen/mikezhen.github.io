@@ -7,7 +7,8 @@
   "frameworks": [
     "Node",
     "Angular",
-    "Express.js"
+    "Express.js",
+    "React"
   ],
   "tools": [
     "AWS",
