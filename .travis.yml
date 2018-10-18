@@ -23,11 +23,12 @@ jobs:
     - stage: build
       script: npm run build
     - stage: deploy
-      script: skip
+      script: echo "Deploying to GitHub Pages..."
       deploy:
         provider: pages
         skip-cleanup: true
         github-token: $GITHUB_TOKEN
         local-dir: build
+        target-branch: master
         on:
-          branch: master
+          branch: develop
