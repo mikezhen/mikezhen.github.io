@@ -24,6 +24,7 @@ jobs:
       script: npm run build
     - stage: deploy
       script: echo "Deploying to GitHub Pages..."
+      before_deploy: npm run build
       deploy:
         provider: pages
         skip-cleanup: true
