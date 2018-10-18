@@ -1,19 +1,19 @@
 language: node_js
-node_js:
-  - "node"
+node_js: node
+sudo: false
 cache:
   directories:
-    - "node_modules"
-install:
-  - npm i -g npm@5.7.1
-  - npm ci
+    - node_modules
+install: npm ci
 stages:
   - name: lint
     if: type = pull_request
   - name: test
     if: type = pull_request
   - name: build
-    if: type = pull_request
+    if: type = push
+  - name: deploy
+    if: type = push
 jobs:
   include:
     - stage: test
@@ -22,3 +22,12 @@ jobs:
       script: ./node_modules/.bin/eslint src/
     - stage: build
       script: npm run build
+    - stage: deploy
+      script: skip
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN
+        local-dir: build
+        on:
+          branch: master
