@@ -1,0 +1,95 @@
+{
+  "name": "Mike Zhen",
+  "role": "Software Engineer",
+  "location": "Chicago, Illinois",
+  "description": "Hello! My name is Mike and I am a software engineer with full-stack experience primarily using Javascript and Golang. I am also well-versed in Amazon Web Services (AWS) cloud solutions. I am always trying to stay updated and learning new technologies. (Fun fact: I'm utilizing the creation of this page to learn React!)",
+  "contacts": [
+    {
+      "method": "email",
+      "link": "mailto:mike.zhen@icloud.com"
+    },
+    {
+      "method": "linkedin",
+      "link": "https://www.linkedin.com/in/mikezhen"
+    },
+    {
+      "method": "github",
+      "link": "https://github.com/mikezhen"
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript (ES6)",
+      "label": "language"
+    },
+    {
+      "name": "Python",
+      "label": "language"
+    },
+    {
+      "name": "C/C++",
+      "label": "language"
+    },
+    {
+      "name": "NodeJS",
+      "label": "framework"
+    },
+    {
+      "name": "Angular",
+      "label": "framework"
+    },
+    {
+      "name": "Express.js",
+      "label": "framework"
+    },
+    {
+      "name": "React",
+      "label": "framework"
+    },
+    {
+      "name": "AWS",
+      "label": "tool"
+    },
+    {
+      "name": "Terraform",
+      "label": "tool"
+    },
+    {
+      "name": "Ansible",
+      "label": "tool"
+    },
+    {
+      "name": "Golang",
+      "label": "language"
+    }
+  ],
+  "experiences": [
+    {
+      "companyName": "Capital One",
+      "roleTitle": "Software Engineer",
+      "experienceType": "work",
+      "startDate": "July 2016",
+      "endDate": "Present",
+      "roleDescription": "Coded solution for data encryption in AWS. Automated infrastructure provisioning and server configuration for various applications. Designed architecture for multiple application migrations into the cloud. Led proof-of-concept efforts to validate plausibility of cloud solutions.",
+      "skills": ["AWS","Python","Terraform","Ansible","Docker","Lambda"]
+    },
+    {
+      "companyName": "Capital One",
+      "roleTitle": "Associate Software Engineer",
+      "experienceType": "work",
+      "startDate": "July 2015",
+      "endDate": "July 2016",
+      "roleDescription": "Developed web application as internal tool using MEAN technologies from scratch. Wrote REST API's on Express framework and designed front-end using AngularJS. Led effort to automate application deployment into the cloud.",
+      "skills": ["JavaScript","Node","Angular","MongoDB","Express.js","Bootstrap"]
+    },
+    {
+      "companyName": "University of Illinois at Urbana-Champaign",
+      "roleTitle": "Bachelor's in Computer Engineering",
+      "experienceType": "academic",
+      "startDate": "August 2011",
+      "endDate": "May 2015",
+      "roleDescription": "Completed many courses relating to hardware design and low level programming. Gained experience through various projects including: building a terminal-based operating system and programming embedded system to autonomously balance a ball.",
+      "skills": ["Python","C/C++","OS"]
+    }
+  ]
+}

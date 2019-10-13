@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Timeline.css'
-import { TimelineBlock } from './TimelineBlock'
+import { Timeline } from '../../Timeline'
 
 const propTypes = {
   experiences: PropTypes.arrayOf(PropTypes.shape({
@@ -27,23 +26,12 @@ const defaultProps = {
 }
 
 /**
- * Timeline component that display information blocks
- * in chronological order based on start/end dates
- * 
- * TODO: Sort experiences by date prior to creating TimelineBlock
+ * ExperienceSectionContent is child component which contains
+ * content pertaining to the experience section
  */
-export const Timeline = (props) => (
-  <div className="timeline-wrapper">
-    <span className="up-arrow" />
-    <div className="timeline">
-      {
-        props.experiences.map((e, i) =>
-          <TimelineBlock experience={e} key={i} />
-        )
-      }
-    </div>
-  </div>
+export const ExperienceSectionContent = (props) => (
+  <Timeline experiences={props.experiences} />
 )
 
-Timeline.propTypes = propTypes
-Timeline.defaultProps = defaultProps
+ExperienceSectionContent.propTypes = propTypes
+ExperienceSectionContent.defaultProps = defaultProps

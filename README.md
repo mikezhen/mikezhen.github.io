@@ -2,8 +2,10 @@
 
 Here resides the source code for my personal page hosted on GitHub Pages, which I created with React. I am using this project as my tool to learn React and some other tools such as ESLint and Travis CI. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and utilizes several open source contributions.
 
-### Attributions
+## Attributions
+
 Special thanks to the open source community; I could not have accomplished this project without their contributions.
+
 * HTML5 for the template and CSS to create my theme
 * [react-scroll-up](https://github.com/milosjanda/react-scroll-up) for the cool scroll-to-the-top component
 * [create-react-app](https://github.com/facebookincubator/create-react-app) for the React app scaffolding

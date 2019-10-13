@@ -1,65 +1,43 @@
-import React, { Component } from 'react';
-import routes from 'data/navigation.json';
-import PropTypes from 'prop-types';
-import { Navbar } from '../Navbar';
-import { Section, SectionSkill, SectionIntro, SectionExperience } from '../Section';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Section } from '../Section'
+import { 
+  IntroductionSectionContent,
+  SkillsSectionContent,
+  ExperienceSectionContent
+} from '../Section/SectionContent'
 
 const propTypes = {
-  background: PropTypes.string,
-  imgUrl: PropTypes.string,
-};
-
-const defaultProps = {
-  background: 'Description',
-  imgUrl: '',
-};
-
-export class Body extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { routes };
-  }
-
-  renderSection(section) {
-    let component;
-    switch (section) {
-      case 'intro':
-        component = (
-          <SectionIntro
-            background={this.props.background}
-            imgUrl={this.props.imgUrl}
-          />
-        );
-        break;
-      case 'skills':
-        component = <SectionSkill />;
-        break;
-      case 'experience':
-        component = <SectionExperience />;
-        break;
-      default:
-        break;
-    }
-    return component;
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <Navbar routes={routes} />
-        <div id="main">
-          {this.state.routes.map((route) => {
-            return (
-              <Section section={route.section} title={route.title} key={route.id}>
-                {this.renderSection(route.section)}
-              </Section>
-            );
-          })}
-        </div>
-      </React.Fragment>
-    );
-  }
+  introduction: PropTypes.string.isRequired,
+  skills: PropTypes.array.isRequired,
+  experiences: PropTypes.array.isRequired
 }
 
-Body.propTypes = propTypes;
-Body.defaultProps = defaultProps;
+const defaultProps = {
+  introduction: '',
+  skills: [],
+  experiences: []
+}
+
+/**
+ * Body component contains majority of the site content and
+ * embodies all the different sections
+ */
+export const Body = (props) => (
+  <React.Fragment>
+    <div id="main">
+      <Section titleAlign="left">
+        <IntroductionSectionContent description={props.introduction} />
+      </Section>
+      <Section title="Skills" titleAlign="center">
+        <SkillsSectionContent skillList={props.skills} />
+      </Section>
+      <Section title="Experience" titleAlign="center">
+        <ExperienceSectionContent experiences={props.experiences} />
+      </Section>
+    </div>
+  </React.Fragment>
+)
+
+Body.propTypes = propTypes
+Body.defaultProps = defaultProps
