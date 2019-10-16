@@ -4,13 +4,15 @@ import PropTypes from 'prop-types'
 const propTypes = {
   title: PropTypes.string,
   titleAlign: PropTypes.oneOf(['left', 'center']),
-  children: PropTypes.element
+  children: PropTypes.element,
+  hideTitle: PropTypes.bool
 }
 
 const defaultProps = {
   title: null,
   titleAlign: 'center',
-  children: <React.Fragment />
+  children: <React.Fragment />,
+  hideTitle: false
 }
 
 /**
@@ -20,7 +22,7 @@ const defaultProps = {
 export const Section = (props) => {
   let titleAlign = props.titleAlign === 'left' ? '' : 'special'
   return (<section id={props.title} className={`main ${titleAlign}`}>
-    { props.title ? 
+    { props.title && !props.hideTitle ? 
       (
         <header className="major">
           <h2>{props.title}</h2>

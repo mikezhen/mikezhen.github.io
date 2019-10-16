@@ -1,35 +1,27 @@
-/* eslint react/forbid-prop-types: 0 */
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const propTypes = {
-  routes: PropTypes.array,
-};
+  routes: PropTypes.arrayOf(PropTypes.string.isRequired)
+}
 
 const defaultProps = {
-  routes: [],
-};
-
-export class Navbar extends Component {
-  render() {
-    const tabs = [];
-    this.props.routes.forEach((route) => {
-      tabs.push((
-        <li key={route.section}>
-          <a href={`#${route.section}`}>{route.title}</a>
-        </li>
-      ));
-    });
-
-    return (
-      <nav id="nav">
-        <ul>
-          {tabs}
-        </ul>
-      </nav>
-    );
-  }
+  routes: []
 }
+
+export const Navbar = (props) => (
+  <nav id="nav">
+    <ul>
+      {
+        props.routes.map((route) => (
+          <li key={route}>
+            <a href={`#${route}`}>{route}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+)
 
 Navbar.propTypes = propTypes;
 Navbar.defaultProps = defaultProps;

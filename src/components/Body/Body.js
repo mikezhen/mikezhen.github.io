@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Section } from '../Section'
+import { Navbar } from '../Navbar'
 import { 
   IntroductionSectionContent,
   SkillsSectionContent,
@@ -25,8 +26,9 @@ const defaultProps = {
  */
 export const Body = (props) => (
   <React.Fragment>
+    <Navbar routes={['Introduction', 'Skills', 'Experience']} />
     <div id="main">
-      <Section titleAlign="left">
+      <Section title="Introduction" titleAlign="left" hideTitle>
         <IntroductionSectionContent description={props.introduction} />
       </Section>
       <Section title="Skills" titleAlign="center">
