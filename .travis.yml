@@ -2,22 +2,16 @@ language: node_js
 node_js: node
 cache: yarn
 stages:
-  - name: lint
-    if: type = pull_request
   - name: test
     if: type = pull_request
-  - name: build
-    if: type = push AND branch = develop
   - name: deploy
     if: type = push AND branch = develop
 jobs:
   include:
     - stage: test
       script: yarn test
-    - stage: lint
+    - stage: test
       script: ./node_modules/.bin/eslint src/
-    - stage: build
-      script: npm run build
     - stage: deploy
       script: echo "Deploying to GitHub Pages..."
       before_deploy: npm run build
