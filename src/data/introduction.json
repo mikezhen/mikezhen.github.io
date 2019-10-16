@@ -66,10 +66,19 @@
   "experiences": [
     {
       "companyName": "Capital One",
+      "roleTitle": "Senior Software Engineer",
+      "experienceType": "work",
+      "startDate": "December 2018",
+      "endDate": "Present",
+      "roleDescription": "Wrote Golang service to collect and aggregate data from across the enterprise for dashboards to enable quick decision-making from leadership. Containerized services using Docker and automated deployment onto AWS ECS cluster. Streamlined application cross-region failover in AWS.",
+      "skills": ["AWS","Golang","React","Jenkins","Docker","Node","ElasticSearch"]
+    },
+    {
+      "companyName": "Capital One",
       "roleTitle": "Software Engineer",
       "experienceType": "work",
       "startDate": "July 2016",
-      "endDate": "Present",
+      "endDate": "December 2018",
       "roleDescription": "Coded solution for data encryption in AWS. Automated infrastructure provisioning and server configuration for various applications. Designed architecture for multiple application migrations into the cloud. Led proof-of-concept efforts to validate plausibility of cloud solutions.",
       "skills": ["AWS","Python","Terraform","Ansible","Docker","Lambda"]
     },

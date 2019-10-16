@@ -6,7 +6,7 @@ import Rocket from '../../assets/img/rocket.png'
 
 export const Footer = () => (
   <footer id="footer">
-    <ScrollUp showUnder={2200}>
+    <ScrollUp showUnder={2600}>
       <img id="scroll-image" src={Rocket} alt="" />
     </ScrollUp>
     <p className="copyright">Beam me up!</p>
