@@ -1,39 +1,38 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import './Section.css';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const propTypes = {
-  section: PropTypes.string,
   title: PropTypes.string,
+  titleAlign: PropTypes.oneOf(['left', 'center']),
   children: PropTypes.element,
-};
-
-const defaultProps = {
-  section: '',
-  title: 'Title',
-  children: <React.Fragment />,
-};
-
-export class Section extends Component {
-  render() {
-    return this.props.section === 'intro' ?
-      (
-        <section id={this.props.section} className="main">
-          {React.Children.map(this.props.children, (child) => {
-            return child ? React.cloneElement(child, { ...this.props }) : child;
-          })}
-        </section>
-      ) :
-      (
-        <section id={this.props.section} className="main special">
-          <header className="major">
-            <h2>{this.props.title}</h2>
-          </header>
-          {this.props.children}
-        </section>
-      );
-  }
+  hideTitle: PropTypes.bool
 }
 
-Section.propTypes = propTypes;
-Section.defaultProps = defaultProps;
+const defaultProps = {
+  title: null,
+  titleAlign: 'center',
+  children: <React.Fragment />,
+  hideTitle: false
+}
+
+/**
+ * Section is a generic container component which includes
+ * a section title and content is configured by child components
+ */
+export const Section = (props) => {
+  let titleAlign = props.titleAlign === 'left' ? '' : 'special'
+  return (<section id={props.title} className={`main ${titleAlign}`}>
+    { props.title && !props.hideTitle ? 
+      (
+        <header className="major">
+          <h2>{props.title}</h2>
+        </header>
+      ) :
+      null
+    }
+    {props.children}
+  </section>)
+}
+
+Section.propTypes = propTypes
+Section.defaultProps = defaultProps

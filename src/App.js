@@ -1,27 +1,24 @@
-import React, { Component } from 'react';
-import 'App.css';
-import { Header } from 'components/Header';
-import { Body } from 'components/Body';
-import { Footer } from 'components/Footer';
-import person from 'data/intro.json';
+import React from 'react'
+import './App.css'
+import { Header } from './components/Header'
+import { Body } from './components/Body'
+import { Footer } from './components/Footer'
 
-class App extends Component {
-  render() {
-    return (
-      <div id="wrapper" className="App">
-        <Header
-          name={person.name}
-          role={person.role}
-          location={person.location}
-        />
-        <Body
-          background={person.background}
-          imgUrl={person.imgUrl}
-        />
-        <Footer />
-      </div>
-    );
-  }
-}
+import Person from './data/introduction.json'
 
-export default App;
+const App = () => (
+  <div id="wrapper" className="App">
+    <Header name={Person.name}
+      role={Person.role}
+      location={Person.location}
+      contacts={Person.contacts}
+    />
+    <Body introduction={Person.description}
+      skills={Person.skills}
+      experiences={Person.experiences}
+    />
+    <Footer />
+  </div>
+)
+
+export default App

@@ -22,7 +22,6 @@ exports[`renders match previous iteration 1`] = `
     </h1>
     <p>
       Software Engineer
-       
     </p>
     <div
       className="location row"
@@ -31,7 +30,7 @@ exports[`renders match previous iteration 1`] = `
         className="icon fa-map-marker"
       />
       <p>
-        Washington D.C.
+        Chicago, Illinois
       </p>
     </div>
     <ul
@@ -45,7 +44,7 @@ exports[`renders match previous iteration 1`] = `
           <span
             className="label"
           >
-            Email
+            email
           </span>
         </a>
       </li>
@@ -57,7 +56,7 @@ exports[`renders match previous iteration 1`] = `
           <span
             className="label"
           >
-            LinkedIn
+            linkedin
           </span>
         </a>
       </li>
@@ -69,7 +68,7 @@ exports[`renders match previous iteration 1`] = `
           <span
             className="label"
           >
-            GitHub
+            github
           </span>
         </a>
       </li>
@@ -81,21 +80,21 @@ exports[`renders match previous iteration 1`] = `
     <ul>
       <li>
         <a
-          href="#intro"
+          href="#Introduction"
         >
           Introduction
         </a>
       </li>
       <li>
         <a
-          href="#skills"
+          href="#Skills"
         >
           Skills
         </a>
       </li>
       <li>
         <a
-          href="#experience"
+          href="#Experience"
         >
           Experience
         </a>
@@ -106,8 +105,8 @@ exports[`renders match previous iteration 1`] = `
     id="main"
   >
     <section
-      className="main"
-      id="intro"
+      className="main "
+      id="Introduction"
     >
       <div
         className="spotlight"
@@ -123,31 +122,30 @@ exports[`renders match previous iteration 1`] = `
             </h2>
           </header>
           <p>
-            Hello! My name is Mike and I am a software engineer with full-stack development experience using the MEAN technologies. I am also well-versed in Amazon Web Services (AWS) cloud solutions. I am always trying to stay updated and learning new technologies. (Fun fact: I'm utilizing the creation of this page to learn React!)
+            Hello! My name is Mike and I am a software engineer with full-stack experience primarily using Javascript and Golang. I am also well-versed in Amazon Web Services (AWS) cloud solutions. I am always trying to stay updated and learning new technologies. (Fun fact: I'm utilizing the creation of this page to learn React!)
           </p>
-          <a
-            className="button special"
-            download={true}
-            href="mikezhen.pdf"
+          <button
+            className="special medium"
+            onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
           >
             Get Resume
-          </a>
+          </button>
         </div>
         <span
           className="image"
         >
           <img
             alt=""
-            src="https://media.licdn.com/dms/image/C5603AQH4k6Sw4lLMyQ/profile-displayphoto-shrink_200_200/0?e=1542844800&v=beta&t=J2jzjdArAc_kG9eyjbWn57N5iEXgwPNL170jyikC8sE"
+            src="selfie.jpg"
           />
         </span>
       </div>
     </section>
     <section
       className="main special"
-      id="skills"
+      id="Skills"
     >
       <header
         className="major"
@@ -163,7 +161,7 @@ exports[`renders match previous iteration 1`] = `
           className="4u 12u$(medium)"
         >
           <span
-            className="icon major style2 fa-code"
+            className="icon major fa-code style2"
             id="skill-icons"
           />
           <h3
@@ -173,7 +171,7 @@ exports[`renders match previous iteration 1`] = `
               }
             }
           >
-            Languages
+            Language
           </h3>
           <ul
             className="skill-list"
@@ -187,13 +185,16 @@ exports[`renders match previous iteration 1`] = `
             <li>
               C/C++
             </li>
+            <li>
+              Golang
+            </li>
           </ul>
         </div>
         <div
           className="4u 12u$(medium)"
         >
           <span
-            className="icon major style3 fa-sitemap"
+            className="icon major fa-sitemap style2"
             id="skill-icons"
           />
           <h3
@@ -203,13 +204,13 @@ exports[`renders match previous iteration 1`] = `
               }
             }
           >
-            Frameworks
+            Framework
           </h3>
           <ul
             className="skill-list"
           >
             <li>
-              Node
+              NodeJS
             </li>
             <li>
               Angular
@@ -226,7 +227,7 @@ exports[`renders match previous iteration 1`] = `
           className="4u 12u$(medium)"
         >
           <span
-            className="icon major style4 fa-terminal"
+            className="icon major fa-terminal style2"
             id="skill-icons"
           />
           <h3
@@ -236,7 +237,7 @@ exports[`renders match previous iteration 1`] = `
               }
             }
           >
-            Tools
+            Tool
           </h3>
           <ul
             className="skill-list"
@@ -256,7 +257,7 @@ exports[`renders match previous iteration 1`] = `
     </section>
     <section
       className="main special"
-      id="experience"
+      id="Experience"
     >
       <header
         className="major"
@@ -463,7 +464,7 @@ exports[`renders match previous iteration 1`] = `
             <span
               className="date"
             >
-              Aug 2011 - May 2015
+              August 2011 - May 2015
             </span>
           </div>
         </div>

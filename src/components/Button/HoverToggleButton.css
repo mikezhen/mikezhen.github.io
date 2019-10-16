@@ -1,0 +1,7 @@
+input[type="submit"].medium,
+input[type="reset"].medium,
+input[type="button"].medium,
+button.medium,
+.button.medium {
+  font-size: 1.0em;
+}
