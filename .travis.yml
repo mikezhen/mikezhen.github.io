@@ -1,10 +1,6 @@
 language: node_js
 node_js: node
-sudo: false
-cache:
-  directories:
-    - node_modules
-install: npm ci
+cache: yarn
 stages:
   - name: lint
     if: type = pull_request
@@ -17,7 +13,7 @@ stages:
 jobs:
   include:
     - stage: test
-      script: npm test
+      script: yarn test
     - stage: lint
       script: ./node_modules/.bin/eslint src/
     - stage: build

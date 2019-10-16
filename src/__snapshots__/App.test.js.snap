@@ -74,12 +74,39 @@ exports[`renders match previous iteration 1`] = `
       </li>
     </ul>
   </header>
+  <nav
+    id="nav"
+  >
+    <ul>
+      <li>
+        <a
+          href="#Introduction"
+        >
+          Introduction
+        </a>
+      </li>
+      <li>
+        <a
+          href="#Skills"
+        >
+          Skills
+        </a>
+      </li>
+      <li>
+        <a
+          href="#Experience"
+        >
+          Experience
+        </a>
+      </li>
+    </ul>
+  </nav>
   <div
     id="main"
   >
     <section
       className="main "
-      id={null}
+      id="Introduction"
     >
       <div
         className="spotlight"
@@ -157,6 +184,9 @@ exports[`renders match previous iteration 1`] = `
             </li>
             <li>
               C/C++
+            </li>
+            <li>
+              Golang
             </li>
           </ul>
         </div>
