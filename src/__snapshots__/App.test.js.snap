@@ -161,7 +161,7 @@ exports[`renders match previous iteration 1`] = `
           className="4u 12u$(medium)"
         >
           <span
-            className="icon major fa-code style2"
+            className="icon major fa-code style1"
             id="skill-icons"
           />
           <h3
@@ -227,7 +227,7 @@ exports[`renders match previous iteration 1`] = `
           className="4u 12u$(medium)"
         >
           <span
-            className="icon major fa-terminal style2"
+            className="icon major fa-terminal style3"
             id="skill-icons"
           />
           <h3
@@ -275,6 +275,80 @@ exports[`renders match previous iteration 1`] = `
         <div
           className="timeline"
         >
+          <div
+            className="timeline-block"
+          >
+            <div
+              className="timeline-content"
+            >
+              <h2
+                className="role"
+              >
+                Senior Software Engineer
+              </h2>
+              <h3
+                className="company"
+              >
+                Capital One
+              </h3>
+              <p
+                className="description"
+              >
+                Wrote Golang service to collect and aggregate data from across the enterprise for dashboards to enable quick decision-making from leadership. Containerized services using Docker and automated deployment onto AWS ECS cluster. Streamlined application cross-region failover in AWS.
+              </p>
+              <div
+                className="container"
+              >
+                <span
+                  className="label label-skill"
+                >
+                  AWS
+                </span>
+                <span
+                  className="label label-skill"
+                >
+                  Golang
+                </span>
+                <span
+                  className="label label-skill"
+                >
+                  React
+                </span>
+                <span
+                  className="label label-skill"
+                >
+                  Jenkins
+                </span>
+                <span
+                  className="label label-skill"
+                >
+                  Docker
+                </span>
+                <span
+                  className="label label-skill"
+                >
+                  Node
+                </span>
+                <span
+                  className="label label-skill"
+                >
+                  ElasticSearch
+                </span>
+              </div>
+            </div>
+            <div
+              className="timeline-image"
+            >
+              <div
+                className="sprite work"
+              />
+            </div>
+            <span
+              className="date"
+            >
+              December 2018 - Present
+            </span>
+          </div>
           <div
             className="timeline-block"
           >
@@ -341,7 +415,7 @@ exports[`renders match previous iteration 1`] = `
             <span
               className="date"
             >
-              July 2016 - Present
+              July 2016 - December 2018
             </span>
           </div>
           <div

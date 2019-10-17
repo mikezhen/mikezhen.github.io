@@ -62,11 +62,11 @@ export const SkillsSectionContent = (props) => {
   return (
     <div className="row">
       {
-        skillLabelOrder.map((label) => {
+        skillLabelOrder.map((label, i) => {
           let group = skillGroup[label]
           return group.skills.length > 0 ? (
             <div className={`${columnWidth}u 12u$(medium)`} key={label}>
-              <span id="skill-icons" className={`icon major ${group.icon} style2`} />
+              <span id="skill-icons" className={`icon major ${group.icon} style${i + 1}`} />
               <h3 style={{ fontWeight: 'bold' }}>
                 {label.replace(/^\w/, c => c.toUpperCase())}
               </h3>
