@@ -1,4 +1,6 @@
 # [mikezhen.github.io](https://mikezhen.github.io/)
+[![Build Status](https://travis-ci.com/mikezhen/mikezhen.github.io.svg?branch=develop)](https://travis-ci.com/mikezhen/mikezhen.github.io)
+
 
 Here resides the source code for my personal page hosted on GitHub Pages, which I created with React. I am using this project as my tool to learn React and some other tools such as ESLint and Travis CI. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and utilizes several open source contributions.
 
