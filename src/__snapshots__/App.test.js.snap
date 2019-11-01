@@ -122,7 +122,7 @@ exports[`renders match previous iteration 1`] = `
             </h2>
           </header>
           <p>
-            Hello! My name is Mike and I am a software engineer with full-stack experience primarily using Javascript and Golang. I am also well-versed in Amazon Web Services (AWS) cloud solutions. I am always trying to stay updated and learning new technologies. (Fun fact: I'm utilizing the creation of this page to learn React!)
+            Hello! My name is Mike and I am a software engineer with full-stack experience primarily using Javascript and Golang. I am also well-versed in Amazon Web Services (AWS) cloud solutions and DevOps practices. I am always trying to stay updated and learning new technologies. (Fun fact: I'm utilizing the creation of this page to learn React and updates are automatically deployed with TravisCI!)
           </p>
           <button
             className="special medium"
