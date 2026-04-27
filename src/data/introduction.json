@@ -1,104 +1,85 @@
 {
   "name": "Mike Zhen",
-  "role": "Software Engineer",
+  "role": "Senior Lead Software Engineer",
   "location": "Chicago, Illinois",
-  "description": "Hello! My name is Mike and I am a software engineer with full-stack experience primarily using Javascript and Golang. I am also well-versed in Amazon Web Services (AWS) cloud solutions and DevOps practices. I am always trying to stay updated and learning new technologies. (Fun fact: I'm utilizing the creation of this page to learn React and updates are automatically deployed with TravisCI!)",
-  "contacts": [
+  "description": "Technology generalist at heart well-versed in efficient utilizations of various tools & frameworks to solve complex problems. Specialize in full-stack development and cloud transformation with proven record of leading cross-functional teams to build scalable enterprise solutions.",
+  "contact": [
     {
       "method": "email",
-      "link": "mailto:mike.zhen@icloud.com"
+      "icon": "fa-regular fa-envelope",
+      "link": "mailto:mikezhen.dev@gmail.com"
     },
     {
       "method": "linkedin",
+      "icon": "fa-brands fa-linkedin",
       "link": "https://www.linkedin.com/in/mikezhen"
     },
     {
       "method": "github",
+      "icon": "fa-brands fa-github",
       "link": "https://github.com/mikezhen"
     }
   ],
-  "skills": [
+  "experience": [
     {
-      "name": "JavaScript (ES6)",
-      "label": "language"
+      "company": "Capital One",
+      "role": "Senior Lead Software Engineer",
+      "period": "2024 - Present",
+      "description": [
+        "Spearheaded observability initiative across multiple domains, architecting data ingestion pipelines from 15+ critical sources to establish a unified telemetry foundation — accelerating incident resolution and building technical use cases for enterprise-wide observability adoption",
+        "Served as architecture advisor for 5-8 engineering teams within the enterprise monitoring domain, conducting system architecture reviews, surface non-functional requirements, and resolve complex technical and organizational obstacles blocking delivery",
+        "Established architectural coaching practice for engineers across partner integration workstreams, accelerating delivery cadence while upholding design quality standards"
+      ],
+      "skills": ["AWS","Java","Python","System Architecture"]
     },
     {
-      "name": "Python",
-      "label": "language"
+      "company": "Capital One",
+      "role": "Lead Software Engineer",
+      "period": "2021 - 2024",
+      "description": [
+        "Led a cross-functional team of engineers in the design and delivery of a secure external-facing web portal, enabling 10+ co-brand partners to access contractual reporting and business analytics",
+        "Architected and implemented a scalable group-based authorization model to enforce strict multi-tenant data isolation across all external partner users — eliminating unauthorized data access risk",
+        "Drove engineering excellence across the team through code reviews and technical workshops in cloud-native and modern web patterns — improving codebase maintainability and reducing review cycle time"
+      ],
+      "skills": ["AWS","Java","React","Jenkins","Docker","Kotlin", "Python"]
     },
     {
-      "name": "C/C++",
-      "label": "language"
+      "company": "Capital One",
+      "role": "Senior Software Engineer",
+      "period": "2018 - 2021",
+      "description": [
+        "Engineered a high-concurrency serverless data pipeline to process 20M+ customer records daily into a mission-critical Stand-In Processing (STIP) database, ensuring data availability for authorization decisions",
+        "Designed and implemented critical identity verification features for agent servicing platform using Kotlin and Angular, partnering closely with business stakeholders to ensure 100% compliance with evolving AML regulatory requirements",
+        "Built high-performance internal services using Golang and Docker to aggregate data across fragmented enterprise silos, enabling centralized architecture analytics for strategic planning decisions"
+      ],
+      "skills": ["AWS","Golang","React","Jenkins","Docker","Node","ElasticSearch", "Python"]
     },
     {
-      "name": "NodeJS",
-      "label": "framework"
-    },
-    {
-      "name": "Angular",
-      "label": "framework"
-    },
-    {
-      "name": "Express.js",
-      "label": "framework"
-    },
-    {
-      "name": "React",
-      "label": "framework"
-    },
-    {
-      "name": "AWS",
-      "label": "tool"
-    },
-    {
-      "name": "Terraform",
-      "label": "tool"
-    },
-    {
-      "name": "Ansible",
-      "label": "tool"
-    },
-    {
-      "name": "Golang",
-      "label": "language"
-    }
-  ],
-  "experiences": [
-    {
-      "companyName": "Capital One",
-      "roleTitle": "Senior Software Engineer",
-      "experienceType": "work",
-      "startDate": "December 2018",
-      "endDate": "Present",
-      "roleDescription": "Wrote Golang service to collect and aggregate data from across the enterprise for dashboards to enable quick decision-making from leadership. Containerized services using Docker and automated deployment onto AWS ECS cluster. Streamlined application cross-region failover in AWS.",
-      "skills": ["AWS","Golang","React","Jenkins","Docker","Node","ElasticSearch"]
-    },
-    {
-      "companyName": "Capital One",
-      "roleTitle": "Software Engineer",
-      "experienceType": "work",
-      "startDate": "July 2016",
-      "endDate": "December 2018",
-      "roleDescription": "Coded solution for data encryption in AWS. Automated infrastructure provisioning and server configuration for various applications. Designed architecture for multiple application migrations into the cloud. Led proof-of-concept efforts to validate plausibility of cloud solutions.",
+      "company": "Capital One",
+      "role": "Software Engineer",
+      "period": "2016 - 2018",
+      "description": [
+        "Partnered with cloud architect to design comprehensive migration plans for 8 vendor applications, ensuring seamless cloud migration into AWS and achieving overall reduction in recovery time objectives (RTO)",
+        "Automated end-to-end cloud infrastructure provisioning and application deployment using Jenkins, Terraform, and Ansible, improving deployment time and eliminating manual configuration errors",
+        "Developed custom Python automation to encrypt legacy data-at-rest across multiple AWS services, successfully closing security compliance gaps ahead of native AWS control availability"
+      ],
       "skills": ["AWS","Python","Terraform","Ansible","Docker","Lambda"]
     },
     {
-      "companyName": "Capital One",
-      "roleTitle": "Associate Software Engineer",
-      "experienceType": "work",
-      "startDate": "July 2015",
-      "endDate": "July 2016",
-      "roleDescription": "Developed web application as internal tool using MEAN technologies from scratch. Wrote REST API's on Express framework and designed front-end using AngularJS. Led effort to automate application deployment into the cloud.",
+      "company": "Capital One",
+      "role": "Associate Software Engineer",
+      "period": "2015 - 2016",
+      "description": [
+        "Developed internal MEAN stack web application from inception and hybrid mobile prototype using Ionic, establishing reusable frameworks that cut future project onboarding time"
+      ],
       "skills": ["JavaScript","Node","Angular","MongoDB","Express.js","Bootstrap"]
-    },
+    }
+  ],
+  "education": [
     {
-      "companyName": "University of Illinois at Urbana-Champaign",
-      "roleTitle": "Bachelor's in Computer Engineering",
-      "experienceType": "academic",
-      "startDate": "August 2011",
-      "endDate": "May 2015",
-      "roleDescription": "Completed many courses relating to hardware design and low level programming. Gained experience through various projects including: building a terminal-based operating system and programming embedded system to autonomously balance a ball.",
-      "skills": ["Python","C/C++","OS"]
+      "school": "University of Illinois at Urbana-Champaign",
+      "degree": "Bachelor of Science in Computer Engineering",
+      "period": "2011 - 2015"
     }
   ]
 }
