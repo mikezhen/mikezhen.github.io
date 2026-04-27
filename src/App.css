@@ -1,1 +1,46 @@
-@import "assets/css/main.css";
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ─── Responsive ───────────────────────────────────────── */
+@media (max-width: 860px) {
+  :root { --sidebar-w: 240px; }
+  .main-body { padding: 2rem 1.8rem; }
+}
+
+@media (max-width: 680px) {
+  .layout { flex-direction: column; }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .sidebar-inner { padding: 2rem 1.5rem; }
+
+  .sidebar-section-title { justify-self: center; }
+
+  .profile-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .profile-name { justify-self: center; }
+
+  .avatar-wrap { width: 70px; height: 70px; margin: 0; }
+
+  .exp-card { grid-template-columns: 1fr; gap: .5rem; }
+  .exp-meta { display: flex; gap: .8rem; align-items: center; justify-content: space-between;}
+  .exp-company { margin-top: 0; }
+
+  .main-body { padding: 1.5rem; }
+  .navbar { padding: 0 1.2rem; }
+  .nav-links { gap: 1rem; }
+}
