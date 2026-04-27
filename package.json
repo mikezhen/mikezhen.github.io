@@ -1,8 +1,8 @@
 {
   "name": "mikezhen.github.io",
+  "version": "0.2.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "homepage": "https://mikezhen.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
